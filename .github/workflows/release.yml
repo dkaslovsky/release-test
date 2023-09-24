@@ -6,10 +6,6 @@ on:
   release:
     types:
       - created
-# on:
-#     push:
-#         tags:
-#             - 'v*.*.*'
 
 # jobs
 jobs:
@@ -24,11 +20,11 @@ jobs:
 
       # step 2: generate build files
       - name: Generate build files
-        uses: thatisuday/go-build-action@v1.0.2
+        uses: dkaslovsky/go-build-action@v1.0.3
         with:
           platforms: "darwin/amd64, darwin/arm64, linux/amd64, windows/amd64"
           name: "release-test"
-          compress: "true"
+        #   compress: "true"
           dest: "dist"
 
       # step 3: upload build-artifacts
