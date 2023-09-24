@@ -24,7 +24,7 @@ jobs:
 
       # step 2: generate build files
       - name: Generate build files
-        uses: thatisuday/go-build-action@v1
+        uses: thatisuday/go-build-action@v1.0.2
         with:
           platforms: "darwin/amd64, darwin/arm64, linux/amd64, windows/amd64"
           name: "release-test"
