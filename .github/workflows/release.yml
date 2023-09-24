@@ -2,14 +2,14 @@
 name: release
 
 # on events
-# on:
-#   release:
-#     types:
-#       - created
 on:
-    push:
-        tags:
-            - 'v*.*.*'
+  release:
+    types:
+      - created
+# on:
+#     push:
+#         tags:
+#             - 'v*.*.*'
 
 # jobs
 jobs:
