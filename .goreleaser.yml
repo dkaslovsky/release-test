@@ -1,14 +1,15 @@
 builds:
-  ldflags:
-    - -s -w -X main.build={{.Version}}
-  env:
-    - CGO_ENABLED=0
-  goos:
-    - darwin
-    - linux
-    - windows
-  goarch:
-    - amd64
-    - arm64
+  - id: release-test
+    ldflags:
+      - -s -w -X main.build={{.Version}}
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
 changelog:
     skip: true
