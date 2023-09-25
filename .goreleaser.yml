@@ -1,9 +1,8 @@
 builds:
-  - id: release-test
+  - env:
+      - CGO_ENABLED=0
     ldflags:
       - -s -w -X main.version={{.Version}}
-    env:
-      - CGO_ENABLED=0
     goos:
       - darwin
       - linux
