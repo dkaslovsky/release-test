@@ -4,7 +4,7 @@ import "fmt"
 
 var (
 	name    = "release-test"
-	version = "0.0.11"
+	version = "0.0.13"
 )
 
 func main() {
