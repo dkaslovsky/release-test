@@ -1,5 +1,5 @@
 builds:
-      env:
+    - env:
       - CGO_ENABLED=0
       goos:
       - darwin
@@ -8,4 +8,3 @@ builds:
       goarch:
       - amd64
       - arm64
-      gobinary: "go1.21.0"
