@@ -16,5 +16,5 @@ builds:
 changelog:
     skip: true
 archives:
-    format: binary
+  - format: binary
     name_template: "{{.Binary}}-{{.Os}}-{{.Arch}}"
