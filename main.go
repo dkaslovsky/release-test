@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 var (
-	name    = "release-test"
+	name    string = "release-test"
 	version string
 )
 
